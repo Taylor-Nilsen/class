@@ -1,3 +1,11 @@
+/*
+Taylor Nilsen
+ID: 0702201
+October 29, 2022
+3a
+This is the assignment after watching the video lecture
+*/
+
 #include <iostream>
 using namespace std;
 

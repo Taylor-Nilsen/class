@@ -2,7 +2,7 @@
 Taylor Nilsen
 ID: 0702201
 October 18, 2022
-This is Asignment 1 and it will output my personal information to the console
+This is the assignment Asignment 1 and it will output my personal information to the console
 */
 #include <iostream>
 
