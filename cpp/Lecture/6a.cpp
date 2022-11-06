@@ -1,3 +1,11 @@
+/*
+Taylor Nilsen
+ID: 0702201
+October 29, 2022
+6a
+Design and create algorithms for solving simple problems.
+*/
+
 #include <iostream>
 using namespace std;
 
