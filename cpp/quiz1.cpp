@@ -10,9 +10,16 @@ using namespace std;
 
 int main(){
     char myChar;
+    char letter;
     int increment;
 
     cout << "Enter a character" << endl;
-    cin >> myChar >> endl;
-    
+    cin >> myChar;
+    letter = myChar;
+    cout << "Enter a value to increment by" << endl;
+    cin >> increment;
+
+    cout << "Your character incremented is " << letter + increment << endl;
+
+    return 0;
 }
