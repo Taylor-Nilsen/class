@@ -17,7 +17,18 @@ int main() {
     cout << "Input a Calculation" << endl;
     cin >> num >> op >> num0;
 
-    cout << num op num0;
+    if (op == '+') {
+        cout << num + num0;
+    }
+    if (op == '-') {
+        cout << num - num0;
+    }
+    if (op == '*') {
+        cout << num * num0;
+    }
+    if (op == '/') {
+        cout << num / num0;
+    }
 
 
     return 0;
