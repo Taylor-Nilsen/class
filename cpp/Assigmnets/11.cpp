@@ -31,7 +31,7 @@ int sumConsonants(char letter_1, char letter_2){
     char small = letter_1 < letter_2 ? letter_1 : letter_2;
     char big = letter_1 > letter_2 ? letter_1 : letter_2;
     
-    if(!islower(small) or islower(big))
+    if(!isupper(small) || isupper(big))
         return -1;
     
     for(char i = small; i <= big; i++){
