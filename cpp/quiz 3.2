@@ -1,0 +1,43 @@
+/*
+Taylor Nilsen
+ID: 0702201
+November 27, 2022
+*/
+#include <iostream>
+#include <cmath>
+#include <ctime>
+#include <string>
+using namespace std;
+
+int lastValue(int num);
+char lastValue(string letters);
+
+int main(){
+    char lastlet;
+    int num1,lastnum;
+    string letter;
+    
+    cout << "Please enter a number: ";
+    cin >> num1;
+     lastnum = lastValue(num1);
+    cout << lastnum << endl;
+    
+    cout << "Please enter a String: ";
+    cin >> letter;
+    lastlet = lastValue(letter);
+    cout << lastlet;
+
+    return 0;
+}
+
+int lastValue(int num){
+    int lastDigit;
+    lastDigit = num % 10;
+    return lastDigit;
+}
+char lastValue(string letter){
+    char lastletter;
+    string working = letter;
+    lastletter = working.back();
+    return lastletter;
+}
