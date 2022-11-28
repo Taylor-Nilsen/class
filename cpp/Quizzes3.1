@@ -1,0 +1,40 @@
+/*
+Taylor Nilsen
+ID: 0702201
+November 27, 2022
+*/
+#include <iostream>
+#include <cmath>
+#include <ctime>
+using namespace std;
+
+bool isAscending(int num1, int num2, int num3);
+
+int main() {
+    int first,second,third;
+    bool torf;
+    cout << "Enter 3 Whole Numbers: ";
+    cin >> first >> second >> third;
+    
+    torf = isAscending (first,second,third);
+    if (torf == true){
+        cout << "The numbers are ascending";
+    }
+    else if (torf == false){
+        cout << "The numbers are decending";
+    }
+    else{
+        cout << "error";
+    }
+    return 0;
+    
+}
+
+bool isAscending(int num1, int num2, int num3){
+    if (num1 < num2 and num2 < num3){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
