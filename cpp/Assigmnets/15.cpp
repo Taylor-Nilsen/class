@@ -11,14 +11,14 @@ Apply the program development process to problems that are solved using fundamen
 using namespace std;
 void fillArray(int ar[], int size);
 void printArray(const int ar[], int size);
+int searchArray(const int ar[], int rSize);
 
 int main(){
     int ar[25];
     
     fillArray(ar, 25);
-    
-    cout << printArray(ar, 25) << endl;
-        
+    printArray(ar, 25);
+    cout << "There are x even numbers. x=" << searchArray(ar, 25);
     return 0;
 }
 void fillArray (int ar[], int size) {
@@ -27,14 +27,18 @@ void fillArray (int ar[], int size) {
     }
     
 }
+void printArray(const int ar[], int size){
+    for (int i=0; i < size; i++) {
+        cout << ar[i] << endl;
+    }
+}
+
 int searchArray(const int ar[], int rSize){
     int count = 0;
-    for (int row = 0; row < rSize; row++){
-        for (int col = 0; col < rSize; col++){
-            if ((ar[25])% 2 == 0){
+    for (int i = 0; i < rSize; i++){
+        if ((ar[i])% 2 == 0){
                 count++;
             }
         }
-    }
     return count;
-}
+    }
