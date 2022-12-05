@@ -10,19 +10,21 @@ using namespace std;
 
 void fill2DArray(int a[10][10], int rSize);
 void print2DArray(const int a[10][10], int rSize);
-int getDivisible(const int a[10][10], int rSize, int search);
+int getDivisible(int a[][10], int search, int nums[], int rSize);
+void printArray(int ar[], int size);
 
 int main(){
     int ar[10][10], val;
+    int nums[100];
     fill2DArray(ar, 10);
     print2DArray(ar, 10);
 
 
-    cout << "Enter the number you want to search for: ";
+    cout << "Enter the number you want to divide for: ";
     cin >> val;
 
-    cout << "Your number appears " << getDivisible(ar, 10, val) << " times."<< endl;
-
+    int count = getDivisible(ar, val, nums, 10);
+    printArray(nums, count);
     return 0;
 }
 void fill2DArray(int a[10][10], int rSize){
@@ -42,14 +44,20 @@ void print2DArray(const int a[10][10], int rSize){
     }
 }
 
-int getDivisible(const int a[10][10], int rSize, int search){
-    int count =0;
+int getDivisible(int a[][10], int search, int nums[], int rSize){
+    int count = 0;
     for (int row = 0; row < rSize; row++){
         for (int col = 0; col < rSize; col++){
-            if (a[row][col] == search){
+            if (a[row][col]%search == 0){
+                nums[count] = a[row][col];
                 count++;
             }
         }
     }
     return count;
+}
+void printArray(int ar[], int size){
+    for(int i=0; i < size; i++){
+        cout << ar[i] << endl;
+    }
 }

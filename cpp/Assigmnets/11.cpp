@@ -3,38 +3,48 @@
 #include <ctime>
 using namespace std;
 
-int sumConsonants (char letter_1, char letter_2);
+int sumConsonants (char first, char last);
 bool isVowel(char c);
 
 int main(){
-    char first, second;
+    char a, b;
     
     cout << "Enter 2 Upper Case Letters" << endl;
-    cin >> first >> second;
-    int sum = sumConsonants (first, second);
-    
+    cin >> a >> b;
+    int sum = 0;
+    sum = sumConsonants (a, b);
     if (sum == -1){
-        cout << "error";
+        cout << "Invalid input" << endl;
     }
-        
-    else {
-        cout << "The consonants between your letters add to " << sum;
-    }
-    
+    else{
+        cout << "The sum of the consonants is between the two chars is " << sum << endl;
+    }    
     
     return 0;
 }
 
-int sumConsonants(char letter_1, char letter_2){
+int sumConsonants(char first, char last){
     int sum = 0;
-    
-    char small = letter_1 < letter_2 ? letter_1 : letter_2;
-    char big = letter_1 > letter_2 ? letter_1 : letter_2;
-    
-    if(!isupper(small) || isupper(big))
+    char small;
+    char large;
+    if (first < last){
+        small = first;
+        large = last;
+    }
+    else if (first > last){
+        small = last;
+        large = first;
+        int sum = 0;
+    }
+    else{
         return -1;
-    
-    for(char i = small; i <= big; i++){
+    }
+
+    if(islower(small) or islower(large)){
+        return -1;
+    }
+
+    for(char i = small; i <= large; i++){
         if(!isVowel(i)){
             sum+= static_cast<int>(i);
         }
@@ -45,10 +55,7 @@ int sumConsonants(char letter_1, char letter_2){
 bool isVowel(char c){
     char ch = toupper(c);
     
-    if(ch=='A' || ch=='U' || ch=='I' || ch=='O' || ch=='U'){
+    ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U';
         return true;
-    }
-    else {
-        return false;
-    }
+    return false;
 }
