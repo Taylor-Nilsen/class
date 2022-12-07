@@ -1,3 +1,10 @@
+/*
+Taylor Nilsen
+0702201
+Lecture 16a
+6 December 2020
+Differentiate between object-oriented, structured, and functional programming methodologies.
+*/
 #include <iostream>
 #include <string>
 

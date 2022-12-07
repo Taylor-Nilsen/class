@@ -1,3 +1,11 @@
+/*
+Taylor Nilsen
+ID: 0702201
+October 29, 2022
+11
+Decompose a program into subtasks and use parameter passing to exchange information between the subparts.
+I used the answer code, but i couldnt get it to work. I tried troubleshooting it, but i couldnt figure it out. If you could offer some guidance on how to fix it, that would be great.
+*/
 #include <iostream>
 #include <cmath>
 #include <ctime>
