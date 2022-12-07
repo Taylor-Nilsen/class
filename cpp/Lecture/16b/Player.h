@@ -6,9 +6,10 @@ class Player{
 private:
     string name;
     double average;
+    double slug;
 public:
-    void setPlayerAverage(string name, double avg);
-    void printPlayerAverage();
+    void setPlayer(string name, double avg);
+    double getAverage();
+    double getSlug();
     string getName();
 };
-}
