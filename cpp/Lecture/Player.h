@@ -8,7 +8,7 @@ private:
     double average;
     double slug;
 public:
-    void setPlayer(string name, double avg);
+    void setPlayer(string name, double avg, double slg);
     double getAverage();
     double getSlug();
     string getName();
