@@ -1,3 +1,10 @@
+/*
+Taylor Nilsen
+ID: 0702201
+7 December, 2022
+14a
+Apply the program development process to problems that are solved using fundamental C++ programming constructs and predefined data structures.
+*/
 #include <iostream>
 using namespace std;
 
@@ -49,13 +56,12 @@ int searchArray(const int a[5][5], int rSize, int search){
     return count;
 }
 int findInArray(const int a[5][5], int rSize, int search){
-    int count =0;
     for (int row = 0; row < rSize; row++){
         for (int col = 0; col < rSize; col++){
             if (a[row][col] == search){
-                count++;
+                cout << "row: " << row << ',' << "col: " << col << "\t";
             }
         }
     }
-    return count;
+    return 0;
 }
