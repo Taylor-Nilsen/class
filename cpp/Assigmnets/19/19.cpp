@@ -1,3 +1,12 @@
+/*
+Taylor Nilsen
+0702201
+18
+5 December 2022
+Apply the program development process to problems that are solved using fundamental C++ programming constructs and predefined data structures.
+
+I was really having trouble running the code is VSCode. I was unsure on why it wasnt running. I think it has something to do with it being more than one file. If you have seen this before, please let me know. I would really appreciate it.
+*/
 #include <iostream>
 #include "ToDo.h"
 
