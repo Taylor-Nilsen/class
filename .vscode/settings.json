@@ -47,5 +47,6 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "xstring": "cpp"
-    }
+    },
+    "commentTranslate.hover.enabled": true
 }
